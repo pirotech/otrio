@@ -1,0 +1,11 @@
+{
+  "name": "otrio",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "build:shared": "bun run --filter @otrio/shared build",
+    "dev:backend": "bun run --filter backend start:dev",
+    "dev:frontend": "bun run --filter frontend dev",
+    "postinstall": "bun run build:shared"
+  }
+}
