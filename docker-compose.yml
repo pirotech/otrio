@@ -1,0 +1,16 @@
+services:
+  backend:
+    build:
+      context: .                          # корень монорепо, не папка приложения
+      dockerfile: apps/backend/Dockerfile
+    ports:
+      - "3000:3000"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: apps/frontend/Dockerfile
+    ports:
+      - "5173:80"                         # на хосте 5173, внутри nginx слушает 80
+    depends_on:
+      - backend
