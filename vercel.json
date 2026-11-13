@@ -2,11 +2,11 @@
   "services": {
     "backend": {
       "root": "./",
-      "entrypoint": "Dockerfile.backend"
+      "entrypoint": "apps/backend/Dockerfile"
     },
     "frontend": {
       "root": "./",
-      "entrypoint": "Dockerfile.frontend"
+      "entrypoint": "apps/frontend/Dockerfile"
     }
   }
 }
