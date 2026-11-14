@@ -2,7 +2,8 @@
   "services": {
     "backend": {
       "root": "./",
-      "entrypoint": "apps/backend/Dockerfile"
+      "entrypoint": "apps/backend/Dockerfile",
+      "routePrefix": "/api"
     },
     "frontend": {
       "root": "./",
